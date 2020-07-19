@@ -1,0 +1,13 @@
+version: '3.7'
+networks:
+  default:
+      name: rodsstar
+services:
+
+  scheduler-service:
+    image: scheduler-service
+    container_name: scheduler-service
+    ports:
+      - 8080:8080
+    expose:
+      - 8080

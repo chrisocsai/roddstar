@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  
+  scheduler-service:
+    image: scheduler-service
+    build:
+      context: ./scheduler/
+      dockerfile: Dockerfile
